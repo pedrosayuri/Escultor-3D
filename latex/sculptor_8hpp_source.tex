@@ -1,0 +1,53 @@
+\hypertarget{sculptor_8hpp_source}{}\doxysection{sculptor.\+hpp}
+\label{sculptor_8hpp_source}\index{C:/Users/yuri1/source/repos/Projeto\_Escultor\_3D/Projeto\_Escultor\_3D/sculptor.hpp@{C:/Users/yuri1/source/repos/Projeto\_Escultor\_3D/Projeto\_Escultor\_3D/sculptor.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SCULPTOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SCULPTOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_voxel}{Voxel}} \{}
+\DoxyCodeLine{5     \textcolor{keywordtype}{float} r, g, b;}
+\DoxyCodeLine{6     \textcolor{keywordtype}{float} a;}
+\DoxyCodeLine{7     \textcolor{keywordtype}{bool} isOn;}
+\DoxyCodeLine{8 \};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_sculptor}{Sculptor}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{struct_voxel}{Voxel}}*** vox;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} nx, ny, nz;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{float} r, g, b, a;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_sculptor}{Sculptor}}(\textcolor{keywordtype}{int} \_nx, \textcolor{keywordtype}{int} \_ny, \textcolor{keywordtype}{int} \_nz);}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_sculptor}{\string~Sculptor}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setColor (\textcolor{keywordtype}{float} r, \textcolor{keywordtype}{float} g, \textcolor{keywordtype}{float} b, \textcolor{keywordtype}{float} alpha);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} putVoxel (\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} z);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} cutVoxel(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} z);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} putBox (\textcolor{keywordtype}{int} x0, \textcolor{keywordtype}{int} x1, \textcolor{keywordtype}{int} y0, \textcolor{keywordtype}{int} y1, \textcolor{keywordtype}{int} z0, \textcolor{keywordtype}{int} z1);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} cutBox (\textcolor{keywordtype}{int} x0, \textcolor{keywordtype}{int} x1, \textcolor{keywordtype}{int} y0, \textcolor{keywordtype}{int} y1, \textcolor{keywordtype}{int} z0, \textcolor{keywordtype}{int} z1);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} putShepre (\textcolor{keywordtype}{int} xcenter, \textcolor{keywordtype}{int} ycenter, \textcolor{keywordtype}{int} zcenter, \textcolor{keywordtype}{int} radius);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} cutShepre (\textcolor{keywordtype}{int} xcenter, \textcolor{keywordtype}{int} ycenter, \textcolor{keywordtype}{int} zcenter, \textcolor{keywordtype}{int} radius);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} putEllipsoid(\textcolor{keywordtype}{int} xcenter, \textcolor{keywordtype}{int} ycenter, \textcolor{keywordtype}{int} zcenter, \textcolor{keywordtype}{int} rx, \textcolor{keywordtype}{int} ry, \textcolor{keywordtype}{int} rz);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} cutEllipsoid(\textcolor{keywordtype}{int} xcenter, \textcolor{keywordtype}{int} ycenter, \textcolor{keywordtype}{int} zcenter, \textcolor{keywordtype}{int} rx, \textcolor{keywordtype}{int} ry, \textcolor{keywordtype}{int} rz);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} writeOFF(\textcolor{keywordtype}{char}* filename);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SCULPTOR\_H}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+
+\end{DoxyCode}
